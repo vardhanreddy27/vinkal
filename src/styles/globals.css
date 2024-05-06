@@ -1,3 +1,114 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h1,h2,h3,h4,h5,h6{
+  font-size: revert;
+}
+  html.lenis {
+	height: 100%;
+}
+.logo{
+  margin-bottom: 0px;
+}
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+.font-black1{
+  color: black!important;
+}
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
+body{
+    background-color:rgb(0 0 0 / 86%);
+    color: white;
+}
+.iphone{
+    height:87%!important;
+    transform: rotate(351deg);
+
+}
+.animate-text{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.animate-text2{
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.animated-star {
+    opacity: 0; /* Initially hide the star */
+    animation: starFadeIn 4s ease-out forwards; /* Keep the end-state of animation after it finishes */
+    animation-delay: 1s; /* Add a delay of 2 seconds before the animation starts */
+  }
+  
+  @keyframes starFadeIn {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+    }
+  }
+  
+  .grid1 {
+    width: 100%;
+    max-width: 1500px;
+    height: 400px;
+    display: grid;
+    gap: 1.5vw;
+    padding: 2vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "aside1 aside1 aside2 aside2 aside2 aside2"
+      "aside1 aside1 aside2 aside2 aside2 aside2"
+      "aside1 aside1 aside2 aside2 aside2 aside2"
+      "aside1 aside1 aside2 aside2 aside2 aside2"
+      "aside1 aside1 aside2 aside2 aside2 aside2";
+  }
+  .item {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.395); /* horizontal offset, vertical offset, blur radius, color */
+    border-radius: 16px;
+  }
+  
+  .grid1 .item:nth-child(1) {
+    grid-area: aside1;
+  }
+  .grid1 .item:nth-child(2) {
+    grid-area: aside2;
+  }
+ 
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .group-hover\:animate-none:hover {
+    animation-play-state: paused;
+  }
+  
+  .reverse-animation {
+    animation-direction: reverse;
+  }
+  /* Add this to your CSS */
+  
