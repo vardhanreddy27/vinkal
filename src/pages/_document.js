@@ -4,8 +4,8 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head ><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" strategy="beforeInteractive" async></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" strategy="beforeInteractive" async></script>
+      <Head ><Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" strategy="beforeInteractive" async></Script>
+				<Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" strategy="beforeInteractive" async></Script>
 				<Script
 					src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 					integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -19,7 +19,7 @@ export default function Document() {
 				/>
 				<Script src="https://unpkg.com/split-type"></Script>
 				<Script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></Script>
-				<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+				<Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
 </Head>
       <body>
         <Main />

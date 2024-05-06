@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+"use client";
+import { useEffect } from 'react';
 import React from 'react';
 import Lenis from "@studio-freight/lenis";
 import Preloader from '../components/Preloader'
@@ -9,31 +10,30 @@ import Features from '@/components/Features';
 import { CardStackDemo } from '@/components/CardStackDemo';
 import MarqueeDemo from '@/components/MarqueeDemo';
 import DownloadBadge from '@/components/DownloadBadge';
-function index() {
+
+function Index() { // Changed function name to start with uppercase
   useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		const lenis = new Lenis()
-		function raf(time) {
-		  lenis.raf(time)
-		  requestAnimationFrame(raf)
-		}
-		requestAnimationFrame(raf)
-		
-	}, []);
+    gsap.registerPlugin(ScrollTrigger);
+    const lenis = new Lenis()
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, []);
 
   return (
     <div>  
       <Preloader />
       <Menu />
       <BackgroundBeams />
-	  <DotBackgroundDemo />
-	  <Features />
-	  <MarqueeDemo />
-	  <CardStackDemo />
-	  <DownloadBadge />
- </div>    
-
+      <DotBackgroundDemo />
+      <Features />
+      <MarqueeDemo />
+      <CardStackDemo />
+      <DownloadBadge />
+    </div>    
   )
 }
 
-export default index
+export default Index;
